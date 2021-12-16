@@ -24,15 +24,26 @@ Hacemos click en CONNECT
 ## Instalamos Java 17 (OpenJDK 17)
 
 ```
-sudo apt update
+apt update
 ```
 ```
 apt install openjdk-17-jdk
 ```
-
-
-
-
+```
+cd var/www/html/
+```
+```
+apt install wget
+```
+```
+wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftWebPanel.zip
+```
+```
+apt install unzip
+```
+```
+unzip MinecraftWebPanel.zip
+```
 
 
 
