@@ -52,3 +52,4 @@ unzip MinecraftWebPanel.zip
 ## Bibliografia:
 
 `https://hub.docker.com/r/ubuntu/apache2`
+`https://github.com/Konata400/McWebPanel`
