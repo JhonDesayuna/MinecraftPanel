@@ -29,6 +29,8 @@ apt update
 ```
 apt install openjdk-17-jdk
 ```
+
+## Panel de Minecraft Web
 ```
 cd var/www/html/
 ```
