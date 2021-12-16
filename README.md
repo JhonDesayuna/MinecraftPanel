@@ -38,16 +38,20 @@ cd var/www/html/
 apt install wget
 ```
 ```
-wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftWebPanel.zip
+wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftPanel.zip
 ```
 ```
 apt install unzip
 ```
 ```
-unzip MinecraftWebPanel.zip
+unzip MinecraftPanel.zip
 ```
-
-
+```
+chmod -R 777 MinecraftPanel
+```
+```
+sudo apt install apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
+```
 
 
 
