@@ -21,7 +21,7 @@ Hacemos click en CONNECT
 
 ![image](https://user-images.githubusercontent.com/25081670/146309159-7bab7285-3059-4137-b94d-fd0ff0542b25.png)
 
-## Instalamos Java 17 (OpenJDK 17)
+## Java 17 (OpenJDK 17)
 
 ```
 apt update
