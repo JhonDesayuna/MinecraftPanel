@@ -5,7 +5,7 @@
 Primero instalamos apache2 en docker
 
 ```
-docker run -d --name apache2-container -e TZ=UTC -p 8080:80 -p 25565:25565 ubuntu/apache2:2.4-20.04_beta
+sudo docker run -d --name apache2-container -e TZ=UTC -p 8080:80 -p 25565:25565 ubuntu/apache2:2.4-20.04_beta
 ```
 
 
@@ -24,33 +24,33 @@ Hacemos click en CONNECT
 ## Java 17 (OpenJDK 17)
 
 ```
-apt update
+sudo apt update
 ```
 ```
-apt install openjdk-17-jdk
+sudo apt install openjdk-17-jdk
 ```
 
 ## Panel de Minecraft Web
 ```
-cd var/www/html/
+sudo cd var/www/html/
 ```
 ```
-apt install wget
+sudo apt install wget
 ```
 ```
-wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftPanel.zip
+sudo wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftPanel.zip
 ```
 ```
-apt install unzip
+sudo apt install unzip
 ```
 ```
-unzip MinecraftPanel.zip
+sudo unzip MinecraftPanel.zip
 ```
 ```
-chmod -R 777 MinecraftPanel
+sudo chmod -R 777 MinecraftPanel
 ```
 ```
-sudo apt install apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
+sudo sudo apt install apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
 ```
 
 
