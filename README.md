@@ -44,10 +44,10 @@ wget https://github.com/JhonDesayuna/MinecraftPanel/raw/main/McWebPanel.zip
 apt install unzip
 ```
 ```
-unzip MinecraftPanel.zip
+unzip McWebPanel.zip
 ```
 ```
-chmod -R 777 MinecraftPanel
+chmod -R 777 McWebPanel
 ```
 ```
 apt install -y apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
