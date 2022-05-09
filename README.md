@@ -38,7 +38,7 @@ cd var/www/html/
 apt install wget
 ```
 ```
-wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftPanel.zip
+wget https://github.com/JhonDesayuna/MinecraftPanel/raw/main/McWebPanel.zip
 ```
 ```
 apt install unzip
