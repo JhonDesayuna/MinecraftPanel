@@ -50,7 +50,7 @@ sudo unzip MinecraftPanel.zip
 sudo chmod -R 777 MinecraftPanel
 ```
 ```
-sudo sudo apt install apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
+sudo apt install apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
 ```
 
 
