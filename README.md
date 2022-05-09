@@ -53,7 +53,17 @@ chmod -R 777 MinecraftPanel
 apt install -y apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
 ```
 
+## Cambiar Limite de Subida
+```
+/etc/php/7.0/apache2/php.ini
+```
 
+```
+post_max_size = 1024M
+```
+```
+upload_max_filesize = 1024M
+```
 
 ## Bibliografia:
 
