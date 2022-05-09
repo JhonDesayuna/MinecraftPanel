@@ -32,25 +32,25 @@ apt install -y openjdk-17-jdk
 
 ## Panel de Minecraft Web
 ```
-sudo cd var/www/html/
+cd var/www/html/
 ```
 ```
-sudo apt install wget
+apt install wget
 ```
 ```
-sudo wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftPanel.zip
+wget https://github.com/ergonsale14/MinecraftPanel/raw/main/MinecraftPanel.zip
 ```
 ```
-sudo apt install unzip
+apt install unzip
 ```
 ```
-sudo unzip MinecraftPanel.zip
+unzip MinecraftPanel.zip
 ```
 ```
-sudo chmod -R 777 MinecraftPanel
+chmod -R 777 MinecraftPanel
 ```
 ```
-sudo apt install apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
+apt install -y apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
 ```
 
 
