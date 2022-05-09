@@ -27,7 +27,7 @@ Hacemos click en CONNECT
 apt update
 ```
 ```
-apt install openjdk-17-jdk
+apt install -y openjdk-17-jdk
 ```
 
 ## Panel de Minecraft Web
