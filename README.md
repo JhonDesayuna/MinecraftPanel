@@ -24,10 +24,10 @@ Hacemos click en CONNECT
 ## Java 17 (OpenJDK 17)
 
 ```
-sudo apt update
+apt update
 ```
 ```
-sudo apt install openjdk-17-jdk
+apt install openjdk-17-jdk
 ```
 
 ## Panel de Minecraft Web
