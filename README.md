@@ -8,6 +8,29 @@ Primero instalamos apache2 en docker
 sudo docker run -d --name McWebPanel -e TZ=UTC -p 8081:80 -p 25565:25565 ubuntu/apache2:2.4-20.04_beta
 ```
 
+Con Docker Compose
+```
+services:
+    apache:
+        container_name: apache
+        volumes:
+            - '/home/ubuntu/apache/data:/usr/local/apache2/htdocs'
+        restart: always
+        networks:
+          - nginx
+        environment:
+            - LETSENCRYPT_EMAIL=alejandrogongon@gmail.com
+            - LETSENCRYPT_HOST=mcserver-jhonfast.duckdns.org
+            - VIRTUAL_HOST=mcserver-jhonfast.duckdns.org
+            - VIRTUAL_PROTO=http
+        image: ubuntu/apache2:2.4-20.04_beta
+        ports:
+            - 25565:25565
+
+networks:
+  nginx:
+    external: true
+```
 
 `-p 25565:25565` Puerto de minecraft
 
@@ -66,8 +89,15 @@ upload_max_filesize = 1024M
 ```
 
 ## Mediante la Terminal
+
+Añadir delante de los comandos lo siguiente
+
 ```
 docker exec -it "id contenedor"
+```
+Ejemplo:
+```
+docker exec -it "id contenedor" apt install -y openjdk-17-jdk
 ```
 
 ## Bibliografia:
