@@ -95,7 +95,6 @@ Añadir delante de los comandos lo siguiente
 ```
 docker exec -it "id contenedor"
 ```
-Ejemplo:
 ```
 docker exec -it "id contenedor" apt install -y openjdk-17-jdk
 ```
