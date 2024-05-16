@@ -65,6 +65,11 @@ post_max_size = 1024M
 upload_max_filesize = 1024M
 ```
 
+## Mediante la Terminal
+```
+docker exec -it "id contenedor"
+```
+
 ## Bibliografia:
 
 `https://hub.docker.com/r/ubuntu/apache2`
