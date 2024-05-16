@@ -2,39 +2,33 @@
 
 ## Docker:
 
-Primero instalamos apache2 en docker
+Docker Compose
+```
+version: '2.0'
 
-```
-sudo docker run -d --name McWebPanel -e TZ=UTC -p 8081:80 -p 25565:25565 ubuntu/apache2:2.4-20.04_beta
-```
-
-Con Docker Compose
-```
 services:
     apache:
-        container_name: apache
-        volumes:
-            - '/home/ubuntu/apache/data:/usr/local/apache2/htdocs'
-        restart: always
+        container_name: apache2
+        image: ubuntu/apache2:2.4-20.04_beta
         networks:
           - nginx
+        volumes:
+            - ./data:/usr/local/apache2/htdocs
+            - ./html:/var/www/html
+        restart: always
         environment:
             - LETSENCRYPT_EMAIL=alejandrogongon@gmail.com
-            - LETSENCRYPT_HOST=mcserver-jhonfast.duckdns.org
-            - VIRTUAL_HOST=mcserver-jhonfast.duckdns.org
+            - LETSENCRYPT_HOST=McServer.JhonFast.hal.se
+            - VIRTUAL_HOST=McServer.JhonFast.hal.se
             - VIRTUAL_PROTO=http
-        image: ubuntu/apache2:2.4-20.04_beta
         ports:
             - 25565:25565
 
 networks:
-  nginx:
-    external: true
+    nginx:
+        external: true
 ```
 
-`-p 25565:25565` Puerto de minecraft
-
-`-p 8081:80` Puerto de apache2
 
 Después, una vez creado el contenedor entramos y accedemos a consola.
 
@@ -50,37 +44,35 @@ Hacemos click en CONNECT
 apt update
 ```
 ```
-apt install -y openjdk-17-jdk
+apt install -y openjdk-21-jdk
 ```
 
 ## Panel de Minecraft Web
-```
-cd var/www/html/
-```
+
 ```
 apt install wget
-```
-```
-wget https://github.com/JhonDesayuna/MinecraftPanel/raw/main/McWebPanel.zip
 ```
 ```
 apt install unzip
 ```
 ```
+apt install -y apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
+```
+```
+wget https://github.com/JhonDesayuna/MinecraftPanel/raw/main/McWebPanel.zip
+```
+```
 unzip McWebPanel.zip
 ```
 ```
-chmod -R 777 McWebPanel
+chmod -R 775 McWebPanel
 ```
-```
-apt install -y apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
-```
+
 
 ## Cambiar Limite de Subida
 ```
 /etc/php/7.0/apache2/php.ini
 ```
-
 ```
 post_max_size = 1024M
 ```
@@ -89,6 +81,11 @@ upload_max_filesize = 1024M
 ```
 
 ## Mediante la Terminal
+
+Crear dentro de "apache2" en el servidor, las siguientes carpetas
+
+![image](https://github.com/JhonDesayuna/MinecraftPanel/assets/25081670/c3ecfd98-4227-438e-a5da-7ea5a39060f7)
+
 
 Añadir delante de los comandos lo siguiente
 
