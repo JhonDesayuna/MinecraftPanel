@@ -89,7 +89,8 @@ upload_max_filesize = 1024M
 
 Crear dentro de "apache2" en el servidor, las siguientes carpetas
 
-![image](https://github.com/JhonDesayuna/MinecraftPanel/assets/25081670/c3ecfd98-4227-438e-a5da-7ea5a39060f7)
+![image](https://github.com/JhonDesayuna/MinecraftPanel/assets/25081670/9537ecd5-d362-4c22-bf71-c8a1832506d6)
+
 
 
 Añadir delante de los comandos lo siguiente
