@@ -43,10 +43,13 @@ Hacemos click en CONNECT
 
 ![image](https://user-images.githubusercontent.com/25081670/146309159-7bab7285-3059-4137-b94d-fd0ff0542b25.png)
 
-## Java 17 (OpenJDK 17)
+## Java 21 (OpenJDK 21)
 
 ```
 apt update
+```
+```
+apt upgrade
 ```
 ```
 apt install -y openjdk-21-jdk
@@ -60,6 +63,12 @@ apt install wget
 ```
 apt install unzip
 ```
+nuevo
+```
+apt install apache2 php libapache2-mod-php default-jdk screen vim php-cli php-json gawk wget tar gzip git zip unzip pigz
+
+```
+antiguo
 ```
 apt install -y apache2 php libapache2-mod-php default-jdk screen php-mbstring php-zip php-cli php-json gawk wget zip unzip
 ```
