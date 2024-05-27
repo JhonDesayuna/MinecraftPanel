@@ -4,7 +4,7 @@
 
 Docker Compose
 ```
-version: '2.0'
+version: '3.0'
 
 services:
     apache:
@@ -15,17 +15,22 @@ services:
         volumes:
             - ./data:/usr/local/apache2/htdocs
             - ./html:/var/www/html
+            - ./php:/etc/php
         restart: always
         environment:
             - LETSENCRYPT_EMAIL=alejandrogongon@gmail.com
-            - LETSENCRYPT_HOST=McServer.JhonFast.hal.se
-            - VIRTUAL_HOST=McServer.JhonFast.hal.se
+            - LETSENCRYPT_HOST=McServer.JhonFast.v0x.eu
+            - VIRTUAL_HOST=McServer.JhonFast.v0x.eu
             - VIRTUAL_PROTO=http
         ports:
             - 25565:25565
 
 networks:
     nginx:
+        external: true
+
+volumes:
+    php:
         external: true
 ```
 
