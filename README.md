@@ -55,6 +55,16 @@ apt upgrade
 apt install -y openjdk-21-jdk
 ```
 
+
+Entrar en el contenedor y usar la consola desde dentro
+
+```
+docker-compose exec "nombre del contenedor" bash
+```
+```
+docker-compose exec apache bash
+```
+
 ## Panel de Minecraft Web
 
 ```
