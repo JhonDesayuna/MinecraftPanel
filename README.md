@@ -18,9 +18,9 @@ services:
             - ./php:/etc/php
         restart: always
         environment:
-            - LETSENCRYPT_EMAIL=alejandrogongon@gmail.com
-            - LETSENCRYPT_HOST=McServer.JhonFast.v0x.eu
-            - VIRTUAL_HOST=McServer.JhonFast.v0x.eu
+            - LETSENCRYPT_EMAIL=youremail@gmail.com
+            - LETSENCRYPT_HOST=yourpage.com
+            - VIRTUAL_HOST=yourpage.com
             - VIRTUAL_PROTO=http
         ports:
             - 25565:25565
